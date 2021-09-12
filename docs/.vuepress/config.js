@@ -18,9 +18,10 @@ module.exports = {
             { text: '配置', link: '/config/' },
             { text: '插件', link: '/plugin/' },
             { text: '案例', link: '/example/' },
+            { text: 'FAQ', link: '/faq/' },
         ],
         lastUpdated: 'Last Updated', //
         sidebar: 'auto', // 侧边栏配置
-        sidebarDepth: 2, // 侧边栏显示2级
+        sidebarDepth: 4, // 侧边栏显示2级
     }
 }
