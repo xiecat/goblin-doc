@@ -160,7 +160,7 @@ X-Forwarded-For: 127.0.0.1
 
 ### Match
 
-匹配类型总共有三个 `word`、`prefix`、`Suffix` 不区分大消息
+匹配类型总共有三个 `word`、`prefix`、`Suffix` 不区分大小写
 
 #### word
 
