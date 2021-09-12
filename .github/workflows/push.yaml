@@ -1,8 +1,9 @@
 name: GitHub Actions goblin-doc
 on:
-  create:
-    tags:
-      - v*
+  pull_request:
+    types: [ synchronize ]
+    branches:
+      - master
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
