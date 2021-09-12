@@ -4,4 +4,4 @@
 欢迎一起完善文档
 
 ## 参考链接
-[https://vuepress.docschina.org](https://vuepress.docschina.org)
+[https://vuepress.vuejs.org/zh/guide/](https://vuepress.vuejs.org/zh/guide/)
