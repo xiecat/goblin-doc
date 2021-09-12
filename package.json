@@ -1,0 +1,15 @@
+{
+  "name": "goblin-doc",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/xiecat/goblin-doc",
+  "author": "becivells <732903873@qq.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.8.2"
+  },
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  }
+}
