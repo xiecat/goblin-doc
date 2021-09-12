@@ -1,6 +1,6 @@
 ---
 home: true
-#heroImage: /hero.png
+heroImage: https://socialify.git.ci/xiecat/goblin/image?description=1&forks=1&issues=1&language=1&owner=1&pattern=Circuit%20Board&pulls=1&stargazers=1&theme=Light
 actionText: 起步 →
 actionLink: /guide/
 features:
