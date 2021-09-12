@@ -1,8 +1,10 @@
 name: GitHub Actions goblin-doc
 on:
-  create:
-    tags:
-      - v*
+  push:
+    branches:
+      - dev
+    paths-ignore:
+      - 'README.md'
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
