@@ -1,7 +1,6 @@
 name: GitHub Actions goblin-doc
 on:
   pull_request:
-    types: [ synchronize ]
     branches:
       - master
 jobs:
