@@ -1,9 +1,10 @@
-name: GitHub Actions goblin-doc
+name: GitHub Actions goblin-doc dev
 on:
-  pull_request:
-    types: [ synchronize ]
+  push:
     branches:
-      - master
+      - dev
+    paths-ignore:
+      - 'README.md'
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -20,8 +21,3 @@ jobs:
         run: |
           npm install
           npm  run docs:build
-      - name:  Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@4.1.5
-        with:
-          BRANCH: gh-pages
-          FOLDER: docs/.vuepress/dist
