@@ -3,7 +3,7 @@
 
 这里提供了两个 demo 可以供大家体验使用
 
-### flash demo
+### Flash demo
 
 ```shell
 docker run -it --rm         \
@@ -30,13 +30,13 @@ docker run -it --rm -v $(pwd):/goblin/ -p 8084:8084 becivells/goblin
 
 ## 下载使用
 
-### 从 github 中下载
+### 从 Github 中下载
 
 [![Latest release](https://img.shields.io/github/v/release/xiecat/goblin)](https://github.com/xiecat/goblin/releases/latest)![GitHub All Releases](https://img.shields.io/github/downloads/xiecat/goblin/total)
 
 访问 [https://github.com/xiecat/goblin/releases](https://github.com/xiecat/goblin/releases) 从中选择适合自己操作系统的二进制文件
 
-### 从 docker 中下载
+### 从 Docker 中下载
 
 [![Docker Pulls](https://img.shields.io/docker/pulls/becivells/goblin)](https://hub.docker.com/r/becivells/goblin)![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/becivells/goblin)   
 
