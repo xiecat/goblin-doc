@@ -2,7 +2,7 @@ name: GitHub Actions goblin-doc dev
 on:
   push:
     branches:
-      - dev
+      - master
     paths-ignore:
       - 'README.md'
 jobs:

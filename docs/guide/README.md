@@ -1,0 +1,96 @@
+# 向导
+## 快速使用
+
+这里提供了两个 demo 可以供大家体验使用
+
+### flash demo
+
+```shell
+docker run -it --rm         \
+-p 8083:8083 -p 8084:8084   \
+-p 8085:8085 -p 8086:8086   \
+becivells/goblin-demo-flash
+```
+
+本机访问 [http://127.0.0.1:8083](http://127.0.0.1:8083/) 示例仓库为: [goblin-flash-demo](https://github.com/xiecat/goblin-demo/tree/master/goblin-demo-flash)
+
+### 默认代理百度的 demo
+
+```shell
+docker run -it --rm -v $(pwd):/goblin/ -p 8084:8084 becivells/goblin
+```
+
+本机访问 [http://127.0.0.1:8084](http://127.0.0.1:8084/)
+
+::: warning
+由于goblin 默认是绑定 host 的。这两个示例都需要在 docker 宿主机里访问，并且端口不可改变。否则会出现 403 错误
+:::
+
+## 下载使用
+
+### 从 github 中下载
+
+[![Latest release](https://img.shields.io/github/v/release/xiecat/goblin)](https://github.com/xiecat/goblin/releases/latest)![GitHub All Releases](https://img.shields.io/github/downloads/xiecat/goblin/total)
+
+访问 [https://github.com/xiecat/goblin/releases](https://github.com/xiecat/goblin/releases) 从中选择适合自己操作系统的二进制文件
+
+### 从 docker 中下载
+
+[![Docker Pulls](https://img.shields.io/docker/pulls/becivells/goblin)](https://hub.docker.com/r/becivells/goblin)![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/becivells/goblin)   
+
+```
+docker pull becivells/goblin
+```
+
+Dockerfile 如下：
+
+```
+FROM scratch
+COPY goblin /usr/bin/goblin
+ENTRYPOINT ["/usr/bin/goblin"]
+WORKDIR /goblin
+```
+
+工作目录在 goblin ，首先创建目录，切换到目录下，执行
+
+```shell
+docker run -it --rm -v $(pwd):/goblin/ -p 8084:8084 becivells/goblin
+```
+
+即可自动生成配置文件、插件目录、静态文件目录并且下载地理位置数据库
+
+## 命令行参数
+
+```
+
+────────╔╗──╔╗
+────────║║──║║
+╔══╗╔══╗║╚═╗║║─╔╗╔══╗
+║╔╗║║╔╗║║╔╗║║║─╠╣║╔╗╗
+║╚╝║║╚╝║║╚╝║║╚╗║║║║║║
+╚═╗║╚══╝╚══╝╚═╝╚╝╚╝╚╝
+╔═╝║  v0.3.9-next - 2021-09-12T08:12:09Z
+╚══╝
+        From: https://github.com/xiecat/goblin
+
+Please use this tool within the scope of the license.
+goblin is not responsible for any risks arising from the use of the tool.
+Use agrees to this statement
+ 
+Usage of goblin:
+  -config string
+        Webserver port (default "goblin.yaml")
+  -gen-plugin string
+        Generate rule file
+  -log string
+        Webserver log file (default "goblin.log")
+  -log-level int
+        Log mode [1-5] 1.dump All logs include GET log and POST log, 2. Record POST log, 3. Record dump log in rules, 4. Record error log, and 5. Record exception exit log (default 1)
+  -print-config
+        print config file
+  -test-notice
+        Test message alarm
+  -v    Show version of goblin
+  -w    Write config to config file
+```
+
