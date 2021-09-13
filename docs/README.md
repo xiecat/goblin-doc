@@ -1,7 +1,7 @@
 ---
 home: true
 heroImage: https://socialify.git.ci/xiecat/goblin/image?description=1&font=Rokkitt&forks=1&issues=1&language=1&owner=1&pattern=Floating%20Cogs&pulls=1&stargazers=1&theme=Light
-actionText: 起步 →
+actionText: 开始 →
 actionLink: /guide/
 features:
 - title: 简单快速

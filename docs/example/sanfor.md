@@ -1,4 +1,4 @@
-# sanfor VPN 案例
+# 深信服 VPN 案例
 
 ## 深信服 vpn 客户端替换
 

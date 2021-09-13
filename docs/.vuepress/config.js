@@ -14,7 +14,7 @@ module.exports = {
         editLinkText: '帮助改进页面内容!',
         nav:[ // 导航栏配置
             { text: '主页', link: '/' },
-            { text: '向导', link: '/guide/' },
+            { text: '开始', link: '/guide/' },
             { text: '设计', link: '/design/' },
             { text: '配置', link: '/config/' },
             { text: '插件', link: '/plugin/' },
