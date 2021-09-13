@@ -3,7 +3,7 @@
 
 这里提供了两个 Demo 可以供大家体验使用
 
-### Flash demo
+### Flash Demo
 
 ```shell
 docker run -it --rm         \
@@ -16,7 +16,7 @@ becivells/goblin-demo-flash
 
 本机访问:  [http://127.0.0.1:8083](http://127.0.0.1:8083/) 示例仓库为: [goblin-flash-demo](https://github.com/xiecat/goblin-demo/tree/master/goblin-demo-flash)
 
-### 默认代理百度的 demo
+### 默认代理百度的 Demo
 
 ```shell
 docker run -it --rm -v $(pwd):/goblin/ -p 8084:8084 becivells/goblin
