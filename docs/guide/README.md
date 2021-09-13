@@ -53,7 +53,7 @@ ENTRYPOINT ["/usr/bin/goblin"]
 WORKDIR /goblin
 ```
 
-工作目录在 goblin ，首先创建目录，切换到目录下，执行
+工作目录在 `goblin` ，首先创建目录，切换到目录下，执行
 
 ```shell
 docker run -it --rm -v $(pwd):/goblin/ -p 8084:8084 becivells/goblin
