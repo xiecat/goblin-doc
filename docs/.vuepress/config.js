@@ -1,6 +1,6 @@
 module.exports = {
-    title: 'goblin',
-    description: 'goblin 是一款适用于红蓝对抗中的蜜罐和钓鱼系统',
+    title: 'Goblin',
+    description: 'Goblin 是一款适用于红蓝对抗中的蜜罐和钓鱼系统',
     base:"/goblin-doc/",
     themeConfig: {
         repo: 'xiecat/goblin',

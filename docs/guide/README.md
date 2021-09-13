@@ -25,7 +25,7 @@ docker run -it --rm -v $(pwd):/goblin/ -p 8084:8084 becivells/goblin
 本机访问 [http://127.0.0.1:8084](http://127.0.0.1:8084/)
 
 ::: warning
-由于goblin 默认是绑定 host 的。这两个示例都需要在 docker 宿主机里访问，并且端口不可改变。否则会出现 403 错误
+由于Goblin 默认是绑定 host 的。这两个示例都需要在 docker 宿主机里访问，并且端口不可改变。否则会出现 403 错误
 :::
 
 ## 下载使用
