@@ -1,4 +1,4 @@
-# site 相关参数介绍
+# Site 相关参数介绍
 
 ```yaml
   Site:
