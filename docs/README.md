@@ -12,3 +12,5 @@ features:
   details: goblin 可以通过前置使用 cdn 后置使用socks5的方式隐藏主机。  
 footer:  Copyright © 2021 xiecat
 ---
+
+<img :src="$withBase('/demo.gif')" alt="foo"> 

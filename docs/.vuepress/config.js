@@ -21,8 +21,45 @@ module.exports = {
             { text: '案例', link: '/example/' },
             { text: 'FAQ', link: '/faq/' },
         ],
+        // 默认值是 true 。设置为 false 来禁用所有页面的 下一篇 链接
+        // nextLinks: false,
+        // // 默认值是 true 。设置为 false 来禁用所有页面的 上一篇 链接
+        // prevLinks: false,
         lastUpdated: 'Last Updated', //
-        sidebar: 'auto', // 侧边栏配置
-        sidebarDepth: 4, // 侧边栏显示2级
+        // sidebar: 'auto', // 侧边栏配置
+        sidebarDepth: 4, // 侧边栏显示4级
+        sidebar:{
+            '/example/': [
+                '',     /* /foo/ */
+                'sanfor',  /* /foo/one.html */
+                'flash'   /* /foo/two.html */
+            ],
+            '/guide/': [
+                '',     /* /foo/ */
+                'cmd',  /* /foo/one.html */
+                'proxy',
+                'secret'
+            ],
+            '/config/': [
+                '',
+                'log',     /* /foo/ */
+                'server',  /* /foo/one.html */
+                'proxy',
+                'site',
+                'notice',
+                'iplocation',
+                'cache',
+            ],
+            '/plugin/': [
+                'run',  /* /foo/one.html */
+                'plugin',     /* /foo/ */
+                'variable',
+                'rule',
+                'replace',
+                'injectjs',
+                'dump',
+            ],
+
+        }
     }
 }
