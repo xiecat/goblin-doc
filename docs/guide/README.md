@@ -11,8 +11,8 @@ docker run -it --rm         \
 -p 8085:8085 -p 8086:8086   \
 becivells/goblin-demo-flash
 ```
-![](/goblin-doc/demo.gif)
 
+<img :src="$withBase('/demo.gif')" alt="foo">
 本机访问 [http://127.0.0.1:8083](http://127.0.0.1:8083/) 示例仓库为: [goblin-flash-demo](https://github.com/xiecat/goblin-demo/tree/master/goblin-demo-flash)
 
 ### 默认代理百度的 demo
