@@ -1,4 +1,4 @@
-# cache 相关参数介绍
+# Cache 相关参数介绍
 
 ```yaml
 cache:

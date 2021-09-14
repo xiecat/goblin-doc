@@ -1,4 +1,4 @@
-# site 相关参数介绍
+# Site 相关参数介绍
 
    作为 Proxy 部分的一块单独拉出来讲，确实很有必要。因为这种写法( server:port 然后指定 Listen 地址)看起来不如 nginx 先 Listen:port 再写 server 方便。但是钓鱼是针对站点的。所以从这个角度来说第一种写法会更好
 

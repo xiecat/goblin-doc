@@ -1,4 +1,4 @@
-# proxy 相关参数介绍
+# Proxy 相关参数介绍
 
 ```yaml
 Proxy:

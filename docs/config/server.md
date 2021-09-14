@@ -1,4 +1,4 @@
-# server 相关参数介绍
+# Server 相关参数介绍
 
 ## Goblin 服务器配置
 
