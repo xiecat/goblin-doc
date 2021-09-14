@@ -4,7 +4,7 @@
 前面可以使用 cf 做 cdn 访问者溯源困难
 
 ## 后置配置
-配置文件中 [proxyserveraddr](http://localhost:8080/goblin-doc/config/proxy.html#proxyserveraddr%E3%80%81proxycheckurl) 配置即可
+配置文件中 [proxyserveraddr](/config/proxy.html#proxyserveraddr%E3%80%81proxycheckurl) 配置即可
 ```yaml
 Proxy:
   MaxIdleConns: 512 # 代理一些配置默认即可
