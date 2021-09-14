@@ -31,7 +31,7 @@ module.exports = {
         sidebar:{
             '/example/': [
                 '',     /* /foo/ */
-                'sanfor',  /* /foo/one.html */
+                'sanmoufor',  /* /foo/one.html */
                 'flash'   /* /foo/two.html */
             ],
             '/guide/': [
