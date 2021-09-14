@@ -43,6 +43,10 @@ Proxy:
 
 ## ProxyServerAddr、ProxyCheckURL
 
+`ProxyServerAddr` ：代理服务器地址可以使用 `socks5://127.0.0.1`
 
+`ProxyCheckURL`：验证代理服务器是否有效时访问的 URL
 
 ## PluginDir
+
+存放插件的目录

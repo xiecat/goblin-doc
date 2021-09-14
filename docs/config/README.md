@@ -62,6 +62,20 @@ CacheType: # 可缓存的路径后缀。目前带有参数的静态文件不做�
 - otf
 - ttf
 CacheSize: 12582912  # 最大缓存大小
+SupportMIME:
+  Enable: false
+  List:
+    - text
+    - application/json
+    - application/javascript
+    - application/x-javascript
+    - message
+    - application/hta
+    - application/rtf
+    - application/ecmascript
+    - image/svg+xml
+    - application/xhtml
+    - application/xml
 ```
-
+接下来会详细介绍
 

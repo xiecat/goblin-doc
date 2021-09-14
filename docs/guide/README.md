@@ -53,11 +53,17 @@ ENTRYPOINT ["/usr/bin/goblin"]
 WORKDIR /goblin
 ```
 
-工作目录在 `goblin` ，首先创建目录，切换到目录下，执行
+工作目录在 `goblin` ，首先创建`goblin`目录，切换到目录下，执行
 
 ```shell
 docker run -it --rm -v $(pwd):/goblin/ -p 8084:8084 becivells/goblin
 ```
+::: warning
+`$(pwd)` 是路径代表当前路径(`goblin`)
+也可以使用    
+docker run -it --rm -v goblin:/goblin/ -p 8084:8084 becivells/goblin
+:::
+
 
 即可自动生成配置文件、插件目录、静态文件目录并且下载地理位置数据库
 
