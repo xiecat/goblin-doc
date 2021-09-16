@@ -30,20 +30,19 @@ module.exports = {
         sidebarDepth: 4, // 侧边栏显示4级
         sidebar:{
             '/example/': [
-                '',     /* /foo/ */
-                'sanmoufor',  /* /foo/one.html */
-                'flash'   /* /foo/two.html */
+                '',
+                'flash'
             ],
             '/guide/': [
-                '',     /* /foo/ */
-                'cmd',  /* /foo/one.html */
+                '',
+                'cmd',
                 'proxy',
                 'secret'
             ],
             '/config/': [
                 '',
-                'log',     /* /foo/ */
-                'server',  /* /foo/one.html */
+                'log',
+                'server',
                 'proxy',
                 'site',
                 'notice',
