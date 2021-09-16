@@ -1,7 +1,7 @@
 module.exports = {
     title: 'Goblin',
     description: 'Goblin 是一款适用于红蓝对抗中的钓鱼演练系统',
-    base:"/goblin-doc/",
+    base:"/",
     themeConfig: {
         repo: 'xiecat/goblin',
         repoLabel: 'GitHub',
