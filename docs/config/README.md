@@ -21,6 +21,7 @@ Proxy:
   ProxyServerAddr: "" # 设置代理，设置后通过代理进行网页请求
   ProxyCheckURL: https://myip.ipip.net/ # 访问此地址检查代理设置是否正确
   PluginDir: plugins
+  CertDir: cert
   Site:
     127.0.0.1:8083:  # 请求头的 host 类似于 nginx server_name 如果不匹配 访问不了
       Listen: 0.0.0.0  # 侦听端口。为 127.0.0.1 那么只能本机访问
