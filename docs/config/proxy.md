@@ -12,6 +12,7 @@ Proxy:
   ProxyServerAddr: ""   # 设置代理，设置后通过代理进行网页请求
   ProxyCheckURL: https://myip.ipip.net/ # 访问此地址检查代理设置是否正确
   PluginDir: plugins
+  CertDir: cert
   Site:
     127.0.0.1:8083: # 请求头的 host 类似于 nginx server_name 如果不匹配 访问不了
       Listen: 0.0.0.0  # 侦听端口。为 127.0.0.1 那么只能本机访问
@@ -105,7 +106,11 @@ File: ""  作为整个响应体替换不处理此内容因此不会被忽略
 插件只有放到插件目录，并且配置文件中指定此插件才会生效
 :::
 
-
+## CertDir
+存放证书的目录
+::: warning
+证书文件只有放到证书目录，并且指定此证书，开启 SSL 才会生效
+:::
 ## 参考链接
 
 [实验说明 Golang HTTP 连接池参数](https://xujiahua.github.io/posts/20200723-golang-http-reuse/)
