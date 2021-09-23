@@ -77,6 +77,20 @@ SupportMIME:
     - image/svg+xml
     - application/xhtml
     - application/xml
+OutLog: ## 访问日志输出
+  type: es7 # es7,es6,syslog,file  注意 windows 不支持 syslog
+  loglevel: info
+  eslog:
+    loglevel: info
+    dsn: http://127.0.0.1:9200
+    index: goblin
+    host: localhost
+  filelog:
+    mode: text ## json 或者 text
+    dsn: access.log
+  syslog:
+    mode: text
+    dsn: 127.0.0.1:514
 ```
 接下来会详细介绍
 

@@ -49,6 +49,7 @@ module.exports = {
                 'iplocation',
                 'cache',
                 'supportmime',
+                'outlog',
             ],
             '/plugin/': [
                 'run',  /* /foo/one.html */
