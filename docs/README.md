@@ -6,7 +6,7 @@ actionLink: /guide/
 features:
 - title: 简单快速
   details: 通过简单的配置即可快速使用，减少大部分人工。可以缓存静态文件加速网站访问
-- title: 修改内容
+- title: 快速替换
   details: 可以修改请求头、响应头、响应内容、或者植入特定的 js
 - title: 代理隐藏
   details: Goblin 可以通过前置使用 cdn 后置使用socks5的方式隐藏主机。  
