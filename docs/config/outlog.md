@@ -22,7 +22,12 @@ type 目前只支持 [ es7、es6、syslog、file ]
 ::: warning
 注意 windows 不支持 syslog
 :::
-
+### loglevel 
+输出的日志等级 [ "info", "warn", "warning", "error", "fatal" ]
+目前只有 `info`、`warn`、`warning` 有效
+info 输出所有日志     
+`warn`、`warning`  输出 post 日志 
+其余不输出日志
 ## eslog
 输出至 es
 ```
@@ -33,7 +38,7 @@ eslog:
     host: localhost
 ```
 ### loglevel 
-es 输出的日志等级
+es 输出的日志等级 
 ### dsn
 es 的连接地址
 ### index 
