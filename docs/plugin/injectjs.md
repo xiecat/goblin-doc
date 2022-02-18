@@ -30,4 +30,6 @@
 ```
 
 
-
+::: warning
+append 和 [inject模块](/plugin/injectjs.html) 区别是 inject 直接注入到 js 里面。并且不会追加任何标签。append 是追加到 web 页面上需要标签闭合使用
+:::

@@ -160,6 +160,24 @@ csrf 相关的
 新旧字符串替换
 ### Append
 在页面内追加内容
+```shell
+- url: /art_103.html # 待替换的网页
+  Match: Word
+  Replace: # 替换模块
+    - Request:
+        Method: # 匹配到如下请求方式方可替换
+          - GET
+          - POST
+        Header:
+          goblin: 1.0.1  # 替换的 header 头内容。为空则是删除。
+      Response: # 替换的响应内容
+        Body:
+          Append: "<script type='text/javascript' src='{{ .Static }}a.js'></script>" # 追加字符串
+```
+::: warning
+append 和 [inject模块](/plugin/injectjs.html) 区别是 inject 直接注入到 js 里面。并且不会追加任何标签。append 是追加到 web 页面上需要标签闭合使用
+:::
+
 ### Location 
 链接 302 跳转
 ::: warning
