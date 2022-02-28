@@ -10,5 +10,5 @@ features:
   details: 可以修改请求头、响应头、响应内容、或者植入特定的 js
 - title: 代理隐藏
   details: Goblin 可以通过前置使用 cdn 后置使用 socks5 的方式隐藏主机。  
-footer:  Copyright © 2021 xiecat
+footer:  Copyright © 2022 xiecat
 ---
